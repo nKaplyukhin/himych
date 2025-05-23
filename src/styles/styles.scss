@@ -1,0 +1,69 @@
+@import "./normalize";
+@import "./variables";
+@import "./fonts";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-margin: 20px;
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
+  transition: 0.3s ease-out;
+}
+
+body {
+  font-size: 12px;
+  font-family: Calibri, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+table {
+  border-spacing: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 500px;
+  padding: 0 2rem;
+  margin: auto;
+  @include desktop {
+    max-width: 1200px;
+  }
+}
+
+.main-title {
+  font-family: Manrope, Arial;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+@import "./header";
+@import "./burger";
+@import "./hero";
+@import "./advantage";
+@import "./services";
+@import "./price";
+@import "./footer";

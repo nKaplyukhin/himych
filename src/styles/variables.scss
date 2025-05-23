@@ -1,0 +1,9 @@
+$background-color: #e9f4f8;
+$yellow-color: #fbd887;
+
+$desktop-width: 768px;
+@mixin desktop() {
+  @media screen and (min-width: $desktop-width) {
+    @content;
+  }
+}

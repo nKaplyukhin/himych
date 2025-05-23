@@ -1,0 +1,17 @@
+.services {
+  &__list {
+    font-family: Manrope;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  &__image {
+    border-radius: 2rem;
+  }
+}
