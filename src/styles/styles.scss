@@ -17,6 +17,8 @@ button {
   cursor: pointer;
   color: inherit;
   transition: 0.3s ease-out;
+  border: none;
+  background-color: transparent;
 }
 
 body {
@@ -45,6 +47,10 @@ ul {
   list-style: none;
 }
 
+.section {
+  padding: 1rem 0;
+}
+
 .container {
   max-width: 500px;
   padding: 0 2rem;
@@ -60,10 +66,15 @@ ul {
   margin: 0;
 }
 
+.title {
+  margin-bottom: 1rem;
+}
+
 @import "./header";
 @import "./burger";
 @import "./hero";
 @import "./advantage";
 @import "./services";
 @import "./price";
+@import "./contacts";
 @import "./footer";

@@ -1,8 +1,12 @@
+.price {
+  background-color: $background-color;
+}
+
 .price-table {
   width: 100%;
   border: 1px solid #5b9bd5;
   border-bottom: none;
-  
+
   &__header {
     background-color: #5b9bd5;
     text-align: left;
@@ -26,7 +30,7 @@
     padding: 0.3rem;
     border-bottom: 1px solid #5b9bd5;
     &:first-child {
-        font-weight: bold;
+      font-weight: bold;
     }
   }
 }
