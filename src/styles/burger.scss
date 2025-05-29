@@ -83,7 +83,7 @@
   z-index: 100;
   background-color: #fff;
   pointer-events: none;
-  transition: .3s ease-out;
+  transition: 0.3s ease-out;
 
   &__active {
     opacity: 1;
@@ -164,5 +164,8 @@
     height: 10rem;
     object-fit: contain;
     margin-bottom: 1rem;
+    @include desktop {
+      height: 5rem;
+    }
   }
 }

@@ -1,11 +1,29 @@
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include desktop {
+    }
   }
   &__logo {
     min-width: 12rem;
     flex: 0;
+  }
+  &__link {
+    font-size: 1rem;
+    font-family: Manrope, sans-serif;
+  }
+  &__nav-list {
+    display: none;
+    gap: 1rem;
+    font-size: 1.2rem;
+    @include desktop {
+      display: flex;
+    }
   }
 }

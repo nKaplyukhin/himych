@@ -1,5 +1,8 @@
 .hero {
   position: relative;
+  @include desktop {
+    height: 400px;
+  }
 
   &::before {
     content: "";
@@ -10,15 +13,38 @@
     right: 0;
     background-color: $background-color;
     z-index: -1;
+    @include desktop {
+      bottom: 1rem;
+    }
   }
   &__container {
     display: flex;
     flex-direction: column;
+    height: 100%;
     gap: 2rem;
+    @include desktop {
+    position: relative;
+      width: 100%;
+      flex-direction: row-reverse;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+
+  &__content {
+    font-size: 1rem;
+  }
+
+  &__title {
+    margin-bottom: 1rem;
   }
 
   &__image {
     border-radius: 3rem;
+    @include desktop {
+      width: 50%;
+      padding-bottom: 1rem;
+    }
   }
 
   &__list {
@@ -30,16 +56,29 @@
     padding: 1rem;
     border-radius: 0.71rem;
     box-shadow: 0px 0px 4px 0px rgba(34, 60, 80, 0.2);
+    @include desktop {
+      flex-direction: row;
+      align-items: center;
+      position: absolute;
+      left: 4rem;
+      right: 4rem;
+      margin: auto;
+      bottom: -1rem;
+      padding: 1.5rem 3rem;
+    }
   }
-
   &__item {
     padding: 1rem;
+    width: 100%;
     border: 1px solid black;
     border-radius: 0.3rem;
     text-align: center;
     &:first-child {
       background-color: $yellow-color;
       border-color: $yellow-color;
+    }
+    @include desktop {
+      padding: 0.5rem;
     }
   }
 }

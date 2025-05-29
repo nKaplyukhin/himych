@@ -15,6 +15,25 @@
           class="header__logo logo"
         />
 
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#advantage" class="header__nav-link">Преимущества</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#services" class="header__nav-link">Услуги</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#price" class="header__nav-link">Стоимость</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#contacts" class="header__nav-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a href="#" class="header__link">+7 913 839 31 10</a>
+
         <div class="burger header__burger">
           <button class="burger__button">
             <span class="burger__button-item"></span>
@@ -31,16 +50,16 @@
 
                 <ul class="burger-menu__list">
                   <li class="burger-menu__item">
-                    <a href="" class="menu__link">Преимущества</a>
+                    <a href="#advantage" class="menu__link">Преимущества</a>
                   </li>
                   <li class="burger-menu__item">
-                    <a href="" class="menu__link">Услуги</a>
+                    <a href="#services" class="menu__link">Услуги</a>
                   </li>
                   <li class="burger-menu__item">
-                    <a href="" class="menu__link">Стоимость</a>
+                    <a href="#price" class="menu__link">Стоимость</a>
                   </li>
                   <li class="burger-menu__item">
-                    <a href="" class="menu__link">Контакты</a>
+                    <a href="#contacts" class="menu__link">Контакты</a>
                   </li>
                 </ul>
 
@@ -131,9 +150,13 @@
                 </ul>
 
                 <div class="burger-menu__advertising advertising">
-                  <img src="./assets/images/ad-logo.png" alt="Натуральный замес" class="burger-menu__menu__advertising-logo advertising__image">
+                  <img
+                    src="./assets/images/ad-logo.png"
+                    alt="Натуральный замес"
+                    class="burger-menu__menu__advertising-logo advertising__image"
+                  />
                   <p class="advertising__description">
-                    Продукты с натуральным составом</p>
+                    Продукты с натуральным составом
                   </p>
                 </div>
               </div>
@@ -168,7 +191,7 @@
         </div>
       </section>
 
-      <section class="section advantage">
+      <section id="advantage" class="section advantage">
         <div class="container advantage__container">
           <h2 class="title advantage__title">Преимущества</h2>
           <ul class="advantage__list">
@@ -204,7 +227,7 @@
         </div>
       </section>
 
-      <section class="section services">
+      <section id="services" class="section services">
         <div class="container services__container">
           <h2 class="title services__title">Услуги</h2>
           <ul class="services__list">
@@ -236,128 +259,347 @@
         </div>
       </section>
 
-      <section class="section price">
+      <section id="price" class="section price">
         <div class="container price__container">
           <h2 class="title price__container">Стоимость услуг</h2>
           <table class="price__table price-table">
             <thead class="price-table__header">
               <tr>
-                <th class="price-table__header-item">Услуга</th>
-                <th class="price-table__header-item">Стоимость</th>
+                <th class="price-table__header-item" colspan="6">Услуга</th>
+                <th class="price-table__header-item" colspan="5">Стоимость</th>
               </tr>
             </thead>
 
             <tbody class="price-table__body">
               <tr>
-                <td colspan="2" class="price-table__body-title">САЛОН АВТО</td>
+                <td colspan="11" class="price-table__body-title">САЛОН АВТО</td>
               </tr>
               <tr>
-                <td class="price-table__body-item">Химчистка салона</td>
-                <td class="price-table__body-item">от 3200 руб.</td>
+                <td class="price-table__body-item" colspan="6">
+                  Химчистка салона
+                </td>
+                <td class="price-table__body-item" colspan="5">от 3200 руб.</td>
               </tr>
               <tr>
-                <td class="price-table__body-item">
+                <td class="price-table__body-item" colspan="6">
                   Химчистка с разбором салона
                 </td>
-                <td class="price-table__body-item">от 3800 руб.</td>
+                <td class="price-table__body-item" colspan="5">от 3800 руб.</td>
               </tr>
               <tr>
-                <td class="price-table__body-item">Химчистка потолка авто</td>
-                <td class="price-table__body-item">от 1670 руб.</td>
+                <td class="price-table__body-item" colspan="6">
+                  Химчистка потолка авто
+                </td>
+                <td class="price-table__body-item" colspan="5">от 1670 руб.</td>
               </tr>
               <tr>
-                <td class="price-table__body-item">
+                <td class="price-table__body-item" colspan="6">
                   Комплексная химчистка салона авто
                 </td>
-                <td class="price-table__body-item">от 3200 руб.</td>
+                <td class="price-table__body-item" colspan="5">от 3200 руб.</td>
               </tr>
               <tr>
-                <td class="price-table__body-item">
+                <td class="price-table__body-item" colspan="6">
                   Сухая химчистка салона с выездом
                 </td>
-                <td class="price-table__body-item">от 3200 руб.</td>
+                <td class="price-table__body-item" colspan="5">от 3200 руб.</td>
               </tr>
               <tr>
-                <td class="price-table__body-item">Пропылесосить салон авто</td>
-                <td class="price-table__body-item">от 3200 руб.</td>
+                <td class="price-table__body-item" colspan="6">
+                  Пропылесосить салон авто
+                </td>
+                <td class="price-table__body-item" colspan="5">от 3200 руб.</td>
               </tr>
               <tr>
-                <td class="price-table__body-item">
+                <td class="price-table__body-item" colspan="6">
                   Чистка кожаного салона авто
                 </td>
-                <td class="price-table__body-item">от 3200 руб.</td>
+                <td class="price-table__body-item" colspan="5">от 3200 руб.</td>
               </tr>
               <tr>
-                <td class="price-table__body-item">
+                <td class="price-table__body-item" colspan="6">
                   Очистка пластика салона авто
                 </td>
-                <td class="price-table__body-item">от 3200 руб.</td>
+                <td class="price-table__body-item" colspan="5">от 3200 руб.</td>
               </tr>
               <tr>
-                <td class="price-table__body-item">Химчистка грузовых авто</td>
-                <td class="price-table__body-item">от 6400 руб.</td>
+                <td class="price-table__body-item" colspan="6">
+                  Химчистка грузовых авто
+                </td>
+                <td class="price-table__body-item" colspan="5">от 6400 руб.</td>
               </tr>
 
               <tr>
-                <td colspan="2" class="price-table__body-title">
+                <td colspan="11" class="price-table__body-title">
                   МЯГКАЯ МЕБЕЛЬ
                 </td>
               </tr>
               <tr>
-                <td class="price-table__body-item">Диван двухместный</td>
-                <td class="price-table__body-item">от 2000 руб./ед.</td>
+                <td class="price-table__body-item" colspan="6">
+                  Диван двухместный
+                </td>
+                <td class="price-table__body-item" colspan="5">
+                  от 2000 руб./ед.
+                </td>
               </tr>
               <tr>
-                <td class="price-table__body-item">Диван трехместный</td>
-                <td class="price-table__body-item">от 2500 руб./ед.</td>
+                <td class="price-table__body-item" colspan="6">
+                  Диван трехместный
+                </td>
+                <td class="price-table__body-item" colspan="5">
+                  от 2500 руб./ед.
+                </td>
               </tr>
               <tr>
-                <td class="price-table__body-item">Диван четырёхместный</td>
-                <td class="price-table__body-item">от 3500 руб./ед.</td>
+                <td class="price-table__body-item" colspan="6">
+                  Диван четырёхместный
+                </td>
+                <td class="price-table__body-item" colspan="5">
+                  от 3500 руб./ед.
+                </td>
               </tr>
               <tr>
-                <td class="price-table__body-item">Диван угловой</td>
-                <td class="price-table__body-item">от 5000 руб./ед.</td>
+                <td class="price-table__body-item" colspan="6">
+                  Диван угловой
+                </td>
+                <td class="price-table__body-item" colspan="5">
+                  от 5000 руб./ед.
+                </td>
               </tr>
               <tr>
-                <td class="price-table__body-item">Кресло</td>
-                <td class="price-table__body-item">от 1000 руб./ед.</td>
+                <td class="price-table__body-item" colspan="6">Кресло</td>
+                <td class="price-table__body-item" colspan="5">
+                  от 1000 руб./ед.
+                </td>
               </tr>
               <tr>
-                <td class="price-table__body-item">Стул</td>
-                <td class="price-table__body-item">от 350 руб./ед.</td>
+                <td class="price-table__body-item" colspan="6">Стул</td>
+                <td class="price-table__body-item" colspan="5">
+                  от 350 руб./ед.
+                </td>
               </tr>
               <tr>
-                <td class="price-table__body-item">Кухонный уголок</td>
-                <td class="price-table__body-item">от 2400 руб./ед.</td>
+                <td class="price-table__body-item" colspan="6">
+                  Кухонный уголок
+                </td>
+                <td class="price-table__body-item" colspan="5">
+                  от 2400 руб./ед.
+                </td>
               </tr>
               <tr>
-                <td class="price-table__body-item">Матрас детский</td>
-                <td class="price-table__body-item">от 1000 руб./ед.</td>
+                <td class="price-table__body-item" colspan="6">
+                  Матрас детский
+                </td>
+                <td class="price-table__body-item" colspan="5">
+                  от 1000 руб./ед.
+                </td>
               </tr>
               <tr>
-                <td class="price-table__body-item">Матрас односпальный</td>
-                <td class="price-table__body-item">от 1500 руб./ед.</td>
+                <td class="price-table__body-item" colspan="6">
+                  Матрас односпальный
+                </td>
+                <td class="price-table__body-item" colspan="5">
+                  от 1500 руб./ед.
+                </td>
               </tr>
               <tr>
-                <td class="price-table__body-item">Матрас полутора спальный</td>
-                <td class="price-table__body-item">от 2900 руб./ед.</td>
+                <td class="price-table__body-item" colspan="6">
+                  Матрас полутора спальный
+                </td>
+                <td class="price-table__body-item" colspan="5">
+                  от 2900 руб./ед.
+                </td>
               </tr>
               <tr>
-                <td class="price-table__body-item">Матрас двуспальный</td>
-                <td class="price-table__body-item">от 2000 руб./ед.</td>
+                <td class="price-table__body-item" colspan="6">
+                  Матрас двуспальный
+                </td>
+                <td class="price-table__body-item" colspan="5">
+                  от 2000 руб./ед.
+                </td>
               </tr>
 
               <tr>
-                <td colspan="2" class="price-table__body-title">КОВРЫ</td>
+                <td colspan="11" class="price-table__body-title">КОВРЫ</td>
               </tr>
               <tr>
-                <td class="price-table__body-item">Ковры, ковровое покрытие</td>
-                <td class="price-table__body-item">от 200 руб./кв.м.</td>
+                <td class="price-table__body-item" colspan="6">
+                  Ковры, ковровое покрытие
+                </td>
+                <td class="price-table__body-item" colspan="5">
+                  от 200 руб./кв.м.
+                </td>
               </tr>
 
               <tr>
-                <td colspan="2" class="price-table__body-title">
+                <td colspan="11" class="price-table__body-title">
+                  КЛИНИНГ КВАРТИР
+                </td>
+              </tr>
+              <tr>
+                <td class="price-table__body-item" colspan="6">
+                  Генеральная уборка
+                </td>
+                <td class="price-table__body-item" colspan="5">
+                  от 4 500 руб.
+                </td>
+              </tr>
+              <tr>
+                <td class="price-table__body-item" colspan="6">
+                  Уборка после мероприятия
+                </td>
+                <td class="price-table__body-item" colspan="5">
+                  от 5 000 руб.
+                </td>
+              </tr>
+              <tr>
+                <td class="price-table__body-item" colspan="6">
+                  Мытье балкона
+                </td>
+                <td class="price-table__body-item" colspan="5">от 500 руб.</td>
+              </tr>
+              <tr>
+                <td class="price-table__body-item" colspan="6">
+                  Уборка после ремонта
+                </td>
+                <td class="price-table__body-item" colspan="5">
+                  от 5 000 руб.
+                </td>
+              </tr>
+              <tr>
+                <td class="price-table__body-item" colspan="6">Мытье окон</td>
+                <td class="price-table__body-item" colspan="5">от 500 руб.</td>
+              </tr>
+              <tr>
+                <td class="price-table__body-item" colspan="6">
+                  Ежедневная уборка
+                </td>
+                <td class="price-table__body-item" colspan="5">Договорная</td>
+              </tr>
+              <tr>
+                <td class="price-table__body-item" colspan="6">
+                  Уборка офисов и нежилых помещений
+                </td>
+                <td class="price-table__body-item" colspan="5">Договорная</td>
+              </tr>
+
+              <tr>
+                <td colspan="11" class="price-table__body-title">Шиномонтаж</td>
+              </tr>
+              <tr>
+                <td class="price-table__body-item">Шиномонтаж 1 колесо</td>
+                <td class="price-table__body-item">13R</td>
+                <td class="price-table__body-item">14R</td>
+                <td class="price-table__body-item">15R</td>
+                <td class="price-table__body-item">16R</td>
+                <td class="price-table__body-item">17R</td>
+                <td class="price-table__body-item">18R</td>
+                <td class="price-table__body-item">19R</td>
+                <td class="price-table__body-item">20R</td>
+                <td class="price-table__body-item">21R</td>
+                <td class="price-table__body-item">22R</td>
+              </tr>
+
+              <tr>
+                <td class="price-table__body-item">Снятие\установка</td>
+                <td class="price-table__body-item">70</td>
+                <td class="price-table__body-item">75</td>
+                <td class="price-table__body-item">80</td>
+                <td class="price-table__body-item">110</td>
+                <td class="price-table__body-item">130</td>
+                <td class="price-table__body-item">140</td>
+                <td class="price-table__body-item">150</td>
+                <td class="price-table__body-item">170</td>
+                <td class="price-table__body-item">180</td>
+                <td class="price-table__body-item">200</td>
+              </tr>
+
+              <tr>
+                <td class="price-table__body-item">Демонтаж</td>
+                <td class="price-table__body-item">65</td>
+                <td class="price-table__body-item">70</td>
+                <td class="price-table__body-item">80</td>
+                <td class="price-table__body-item">100</td>
+                <td class="price-table__body-item">120</td>
+                <td class="price-table__body-item">140</td>
+                <td class="price-table__body-item">160</td>
+                <td class="price-table__body-item">180</td>
+                <td class="price-table__body-item">200</td>
+                <td class="price-table__body-item">220</td>
+              </tr>
+
+              <tr>
+                <td class="price-table__body-item">Монтаж</td>
+                <td class="price-table__body-item">65</td>
+                <td class="price-table__body-item">70</td>
+                <td class="price-table__body-item">80</td>
+                <td class="price-table__body-item">100</td>
+                <td class="price-table__body-item">120</td>
+                <td class="price-table__body-item">140</td>
+                <td class="price-table__body-item">160</td>
+                <td class="price-table__body-item">180</td>
+                <td class="price-table__body-item">200</td>
+                <td class="price-table__body-item">220</td>
+              </tr>
+
+              <tr>
+                <td class="price-table__body-item">Балансировка</td>
+                <td class="price-table__body-item">130</td>
+                <td class="price-table__body-item">150</td>
+                <td class="price-table__body-item">170</td>
+                <td class="price-table__body-item">190</td>
+                <td class="price-table__body-item">200</td>
+                <td class="price-table__body-item">220</td>
+                <td class="price-table__body-item">240</td>
+                <td class="price-table__body-item">260</td>
+                <td class="price-table__body-item">280</td>
+                <td class="price-table__body-item">300</td>
+              </tr>
+
+              <tr>
+                <td class="price-table__body-item">Итого одно колесо</td>
+                <td class="price-table__body-item">330</td>
+                <td class="price-table__body-item">365</td>
+                <td class="price-table__body-item">410</td>
+                <td class="price-table__body-item">500</td>
+                <td class="price-table__body-item">570</td>
+                <td class="price-table__body-item">640</td>
+                <td class="price-table__body-item">710</td>
+                <td class="price-table__body-item">790</td>
+                <td class="price-table__body-item">860</td>
+                <td class="price-table__body-item">940</td>
+              </tr>
+
+              <tr>
+                <td class="price-table__body-item">Итого четыре колеса</td>
+                <td class="price-table__body-item">1320</td>
+                <td class="price-table__body-item">1460</td>
+                <td class="price-table__body-item">1640</td>
+                <td class="price-table__body-item">2000</td>
+                <td class="price-table__body-item">2280</td>
+                <td class="price-table__body-item">2560</td>
+                <td class="price-table__body-item">2840</td>
+                <td class="price-table__body-item">3160</td>
+                <td class="price-table__body-item">3440</td>
+                <td class="price-table__body-item">3760</td>
+              </tr>
+
+              <tr>
+                <td class="price-table__body-item">Балансировка\установка</td>
+                <td class="price-table__body-item">800</td>
+                <td class="price-table__body-item">900</td>
+                <td class="price-table__body-item">1000</td>
+                <td class="price-table__body-item">1200</td>
+                <td class="price-table__body-item">1320</td>
+                <td class="price-table__body-item">1440</td>
+                <td class="price-table__body-item">1560</td>
+                <td class="price-table__body-item">1720</td>
+                <td class="price-table__body-item">1840</td>
+                <td class="price-table__body-item">2000</td>
+              </tr>
+
+              <tr>
+                <td colspan="11" class="price-table__body-title">
                   ВОЗМОЖЕН ВЫЕЗД НА ДОМ И ЗА ГОРОД
                 </td>
               </tr>
@@ -366,7 +608,7 @@
         </div>
       </section>
 
-      <section class="section contacts">
+      <section id="contacts" class="section contacts">
         <div class="container contacts__container">
           <h2 class="title contacts__title">Контакты</h2>
           <div class="contacts__content">
@@ -481,10 +723,14 @@
               </ul>
 
               <div class="contacts__advertising advertising">
-                <img src="./assets/images/ad-logo.png" alt="Натуральный замес" class="advertising__image">
-                  <p class="advertising__description">
-                    Продукты с натуральным составом</p>
-                  </p>
+                <img
+                  src="./assets/images/ad-logo.png"
+                  alt="Натуральный замес"
+                  class="advertising__image"
+                />
+                <p class="advertising__description">
+                  Продукты с натуральным составом
+                </p>
               </div>
             </div>
             <div class="map" style="position: relative; overflow: hidden">
