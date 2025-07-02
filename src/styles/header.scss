@@ -8,15 +8,22 @@
     justify-content: space-between;
     align-items: center;
     @include desktop {
+      
     }
   }
   &__logo {
-    min-width: 12rem;
+    min-width: 10rem;
     flex: 0;
+    @include desktop {
+      width: 12rem;
+    }
   }
   &__link {
-    font-size: 1rem;
+    font-size: .8rem;
     font-family: Manrope, sans-serif;
+    @include desktop {
+      font-size: 1rem;
+    }
   }
   &__nav-list {
     display: none;

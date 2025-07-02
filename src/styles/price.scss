@@ -1,5 +1,8 @@
 .price {
   background-color: $background-color;
+  &__table-container {
+    overflow: auto;
+  }
 }
 
 .price-table {
