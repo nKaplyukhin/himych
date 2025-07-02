@@ -1,14 +1,16 @@
 .price {
   background-color: $background-color;
-  &__table-container {
-    overflow: auto;
-  }
 }
 
 .price-table {
   width: 100%;
   border: 1px solid #5b9bd5;
   border-bottom: none;
+  font-size: 0.8rem;
+
+  @include desktop {
+    font-size: 1rem;
+  }
 
   &__header {
     background-color: #5b9bd5;
@@ -16,24 +18,38 @@
   }
 
   &__header-item {
-    padding: 0.3rem;
+  padding: 0.3rem;
     color: #fff;
-    &:first-child {
-      width: 70%;
+    &:last-child {
+      text-align: right;
     }
   }
 
   &__body-title {
-    text-align: center;
+    font-weight: bold;
+    text-align: center !important;
     padding: 0.5rem;
     border-bottom: 1px solid #5b9bd5;
   }
 
   &__body-item {
-    padding: 0.3rem;
+    padding: 0.1rem;
     border-bottom: 1px solid #5b9bd5;
     &:first-child {
       font-weight: bold;
+    }
+    &:last-child {
+      text-align: right;
+    }
+    &_tire-fitting {
+      font-weight: normal !important;
+      text-align: center !important;
+      @include desktop {
+        font-size: 1.1rem;
+      }
+    }
+    @include desktop {
+      padding: 0.3rem;
     }
   }
 }

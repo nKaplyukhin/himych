@@ -19,5 +19,9 @@
   }
   &__image {
     border-radius: 2rem;
+    height: 200px;
+    @include desktop {
+      height: auto;
+    }
   }
 }
