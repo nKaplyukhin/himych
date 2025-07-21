@@ -1,6 +1,7 @@
 @import "./normalize";
 @import "./variables";
 @import "./fonts";
+@import "swiper/css";
 
 * {
   box-sizing: border-box;
@@ -74,6 +75,11 @@ ul {
   }
 }
 
+.swiper-wrapper {
+  display: flex;
+  transition-timing-function: linear; /* Линейная анимация */
+}
+
 @import "./header";
 @import "./burger";
 @import "./hero";
@@ -81,4 +87,5 @@ ul {
 @import "./services";
 @import "./price";
 @import "./contacts";
+@import "./gallery";
 @import "./footer";

@@ -1,3 +1,4 @@
+import Swiper from 'swiper';
 import {
     BURGER_BUTTON_CLASS,
     BURGER_CLOSE_BUTTON_CLASS,
@@ -6,6 +7,7 @@ import {
     BURGER_MENU_LINK_CLASS
 } from "./constants";
 import "./styles/styles.scss";
+import { Autoplay } from 'swiper/modules';
 
 const getElementFromClassname = (className, parent = document) => parent.querySelector(`.${className}`)
 const getElementsFromClassname = (className, parent = document) => parent.querySelectorAll(`.${className}`)
@@ -37,4 +39,21 @@ document.addEventListener("DOMContentLoaded", () => {
     burgerLinks.forEach(burgerLink => {
         burgerLink.addEventListener("click", handleBurgerLinkClick)
     })
+    const swiper = new Swiper(getElementFromClassname("swiper"), {
+        modules: [Autoplay],
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 10,
+        breakpoints: {
+            768: {
+                spaceBetween: 30,
+                slidesPerView: 2,
+            },
+        },
+        grabCursor: true,
+        speed: 8000,
+        autoplay: {
+            delay: 0,
+        },
+    });
 })

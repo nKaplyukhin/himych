@@ -40,6 +40,10 @@ module.exports = () => ({
         use: [MiniCssExtractPlugin.loader, , "css-loader", "sass-loader"],
       },
       {
+        test: /\.css$/,
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
+      },
+      {
         test: /\.html$/i,
         use: "html-loader",
       },
@@ -74,14 +78,6 @@ module.exports = () => ({
         onStart: {
           delete: ["dist"],
         },
-        // onEnd: {
-        //   copy: [
-        //     {
-        //       source: path.join("src", "assets"),
-        //       destination: "dist",
-        //     },
-        //   ],
-        // },
       },
     }),
   ],

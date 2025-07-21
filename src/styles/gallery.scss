@@ -1,0 +1,7 @@
+.gallery {
+  &__swiper {
+    @include desktop {
+      height: 25rem;
+    }
+  }
+}
