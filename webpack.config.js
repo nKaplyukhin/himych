@@ -4,6 +4,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const FileManagerPlugin = require("filemanager-webpack-plugin");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
+const CopyPlugin = require('copy-webpack-plugin');
 
 const port = 3000;
 const dist = path.join(__dirname, "dist");
@@ -79,6 +80,11 @@ module.exports = () => ({
           delete: ["dist"],
         },
       },
+    }),
+    new CopyPlugin({
+      patterns: [
+        { from: './assets/pdf', to: 'assets/pdf' },
+      ],
     }),
   ],
   performance: {
