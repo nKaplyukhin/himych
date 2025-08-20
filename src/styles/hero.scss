@@ -23,7 +23,7 @@
     height: 100%;
     gap: 2rem;
     @include desktop {
-    position: relative;
+      position: relative;
       width: 100%;
       flex-direction: row-reverse;
       align-items: center;
@@ -37,6 +37,17 @@
 
   &__title {
     margin-bottom: 1rem;
+    text-align: center;
+    @include desktop {
+      text-align: left;
+    }
+  }
+
+  &__description {
+    text-align: center;
+    @include desktop {
+      text-align: left;
+    }
   }
 
   &__image {

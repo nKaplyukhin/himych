@@ -119,7 +119,7 @@
     border-radius: 3rem;
     background-color: $yellow-color;
     height: 100%;
-    padding: 1rem;
+    padding: 0.7rem;
   }
   &__content {
     background-color: #fff;
@@ -127,13 +127,15 @@
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
     height: 100%;
   }
   &__logo {
-    width: 20rem;
+    width: 15rem;
     height: 5rem;
     object-fit: contain;
+    margin: 0 auto;
+    margin-bottom: 1rem;
   }
 
   &__list {
@@ -145,7 +147,7 @@
 
   &__social {
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
   }
 
   &__advertising {
@@ -155,13 +157,13 @@
 
 .advertising {
   width: 100%;
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: $yellow-color;
   border-radius: 1rem;
   font-family: Manrope, sans-serif;
   text-align: center;
   &__image {
-    height: 10rem;
+    height: 7rem;
     object-fit: contain;
     margin-bottom: 1rem;
     @include desktop {
